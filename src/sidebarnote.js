@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 export default function Sidebar() {
   return(
-    <sidebar className='sidebar'>
-      <Note />
+    <section className='sidebar'>
+      <li className=''></li>
       <button className='add-folder'>Add folder</button>
-    </sidebar>
+    </section>
   )
 }
