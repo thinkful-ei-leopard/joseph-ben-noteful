@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default function Sidebarnote() {
+export default function Notebar() {
   return(
     <section className='sidebar'>
-      <ul>
-      <Route exact path='/' component={Folder};
-      <Route exact path='/folder:folderId' component={Folder};
-      <Route exact path='/note' component={Notebar};
-      </ul>
+      <button className='add-folder'>Go Back</button>
+      <h3>Folder #</h3>
     </section>
   )
 }
