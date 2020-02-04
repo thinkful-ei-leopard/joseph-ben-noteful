@@ -4,9 +4,16 @@ import Note from './note'
 
 export default function List() {
   return(
-    <ul className='main-list'>
-      <Note />
+    <ul className='list'>
+      {Note.map(note =>
+        <li key={note.id})}>
+          <a href={`/note/${note.id}`}>
+            {note.title}
+          </a>
+        </li>
+      )}
       <button className='add-note'>Add note</button>
     </ul>
-  )
+  </>
+)
 }
