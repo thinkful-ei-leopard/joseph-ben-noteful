@@ -6,6 +6,7 @@ import Sidebar from './notebar';
 import List from './list';
 // // import Folder from './folder';
 // import Note from './note';
+import NotFoundPage from './notfoundpage'
 
 export default function App() {
   return(
