@@ -1,15 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Note from './note'
-
+// import ReactDOM from 'react-dom';
+import stateTwo from './App.js'
 export default function List() {
+  let notes = stateTwo;
   return(
     <>
       <ul className='list'>
-        {Note.map(note =>
+        {notes.map(note =>
           <li key={note.id}>
-            <a href={`/note/${note.id}`}>
-              {note.title}
+            <a href={`/note/${notes.id}`}>
+              {notes.title}
             </a>
           </li>
         )}

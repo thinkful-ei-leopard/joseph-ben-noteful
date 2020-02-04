@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import {Route} from 'react-router-dom';
 import Header from './header';
 import Sidebar from './notebar';
 import List from './list';
+import state from './index.js'
 // // import Folder from './folder';
 // import Note from './note';
-import NotFoundPage from './notfoundpage'
+// import NotFoundPage from './notfoundpage'
 
 export default function App() {
+  let stateTwo = state;
   return(
     <section>
       <Header />
